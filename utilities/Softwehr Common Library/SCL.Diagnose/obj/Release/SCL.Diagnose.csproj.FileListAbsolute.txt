@@ -1,0 +1,4 @@
+H:\Dropbox\Var\Softwehr Common Library\SCL.Diagnose\bin\Release\SCL.Diagnose.dll
+H:\Dropbox\Var\Softwehr Common Library\SCL.Diagnose\bin\Release\SCL.Diagnose.pdb
+H:\Dropbox\Var\Softwehr Common Library\SCL.Diagnose\obj\Release\SCL.Diagnose.dll
+H:\Dropbox\Var\Softwehr Common Library\SCL.Diagnose\obj\Release\SCL.Diagnose.pdb

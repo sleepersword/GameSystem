@@ -1,0 +1,8 @@
+E:\Dropbox\Var\Softwehr Common Library\SCL.Console\bin\Release\SCL.Console.dll
+E:\Dropbox\Var\Softwehr Common Library\SCL.Console\bin\Release\SCL.Console.pdb
+E:\Dropbox\Var\Softwehr Common Library\SCL.Console\obj\Release\SCL.Console.dll
+E:\Dropbox\Var\Softwehr Common Library\SCL.Console\obj\Release\SCL.Console.pdb
+H:\Dropbox\Var\Softwehr Common Library\SCL.Console\bin\Release\SCL.Console.dll
+H:\Dropbox\Var\Softwehr Common Library\SCL.Console\bin\Release\SCL.Console.pdb
+H:\Dropbox\Var\Softwehr Common Library\SCL.Console\obj\Release\SCL.Console.dll
+H:\Dropbox\Var\Softwehr Common Library\SCL.Console\obj\Release\SCL.Console.pdb

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D1062B6D-F3D5-45A3-8E75-4C32ED45E09D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ItemEditor</RootNamespace>
+    <AssemblyName>ItemEditor</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>ItemEditor.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="protobuf-net, Version=2.1.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>..\packages\protobuf-net.2.1.0\lib\net451\protobuf-net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DialogForm_ChangeID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogForm_ChangeID.Designer.cs">
+      <DependentUpon>DialogForm_ChangeID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogForm_New.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogForm_New.Designer.cs">
+      <DependentUpon>DialogForm_New.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogForm_Startup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogForm_Startup.Designer.cs">
+      <DependentUpon>DialogForm_Startup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Document.cs" />
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DialogForm_ChangeID.resx">
+      <DependentUpon>DialogForm_ChangeID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogForm_New.resx">
+      <DependentUpon>DialogForm_New.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogForm_Startup.resx">
+      <DependentUpon>DialogForm_Startup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameSystem\GameSystem.csproj">
+      <Project>{a27e3f59-2515-4285-99bf-4edb6d98880f}</Project>
+      <Name>GameSystem</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Icon\Amulet.png" />
+    <EmbeddedResource Include="Icon\Arrow.png" />
+    <EmbeddedResource Include="Icon\AxeOH.png" />
+    <EmbeddedResource Include="Icon\AxeTH.png" />
+    <EmbeddedResource Include="Icon\Baked.png" />
+    <EmbeddedResource Include="Icon\Beer.png" />
+    <EmbeddedResource Include="Icon\Book.png" />
+    <EmbeddedResource Include="Icon\Boose.png" />
+    <EmbeddedResource Include="Icon\Bow.png" />
+    <EmbeddedResource Include="Icon\Bracelet.png" />
+    <EmbeddedResource Include="Icon\DaggerOH.png" />
+    <EmbeddedResource Include="Icon\Fish.png" />
+    <EmbeddedResource Include="Icon\Flask.png" />
+    <EmbeddedResource Include="Icon\Flesh.png" />
+    <EmbeddedResource Include="Icon\FoodOther.png" />
+    <EmbeddedResource Include="Icon\Fruits.png" />
+    <EmbeddedResource Include="Icon\Fur.png" />
+    <EmbeddedResource Include="Icon\Gemstone.png" />
+    <EmbeddedResource Include="Icon\Hat.png" />
+    <EmbeddedResource Include="Icon\HeavyBoots.png" />
+    <EmbeddedResource Include="Icon\HeavyBreastplate.png" />
+    <EmbeddedResource Include="Icon\HeavyHelmet.png" />
+    <EmbeddedResource Include="Icon\HeavyShield.png" />
+    <EmbeddedResource Include="Icon\HuntingTrophy.png" />
+    <EmbeddedResource Include="Icon\Ingot.png" />
+    <EmbeddedResource Include="Icon\Key.png" />
+    <EmbeddedResource Include="Icon\LightBoots.png" />
+    <EmbeddedResource Include="Icon\LightBreastplate.png" />
+    <EmbeddedResource Include="Icon\LightHelmet.png" />
+    <EmbeddedResource Include="Icon\LightShield.png" />
+    <EmbeddedResource Include="Icon\MaceOH.png" />
+    <EmbeddedResource Include="Icon\MaceTH.png" />
+    <EmbeddedResource Include="Icon\Map.png" />
+    <EmbeddedResource Include="Icon\Miscellaneous.png" />
+    <EmbeddedResource Include="Icon\Ore.png" />
+    <EmbeddedResource Include="Icon\Plant.png" />
+    <EmbeddedResource Include="Icon\PlantSpecial.png" />
+    <EmbeddedResource Include="Icon\Potion.png" />
+    <EmbeddedResource Include="Icon\PotionSpecial.png" />
+    <EmbeddedResource Include="Icon\RapierOH.png" />
+    <EmbeddedResource Include="Icon\RapierTH.png" />
+    <EmbeddedResource Include="Icon\ResourceOther.png" />
+    <EmbeddedResource Include="Icon\Ring.png" />
+    <EmbeddedResource Include="Icon\Robe.png" />
+    <EmbeddedResource Include="Icon\Scroll.png" />
+    <EmbeddedResource Include="Icon\SpearTH.png" />
+    <EmbeddedResource Include="Icon\Stone.png" />
+    <EmbeddedResource Include="Icon\Sweets.png" />
+    <EmbeddedResource Include="Icon\SwordOH.png" />
+    <EmbeddedResource Include="Icon\SwordTH.png" />
+    <EmbeddedResource Include="Icon\ThrowingKnife.png" />
+    <EmbeddedResource Include="Icon\Tool.png" />
+    <EmbeddedResource Include="Icon\Torch.png" />
+    <EmbeddedResource Include="Icon\WandOH.png" />
+    <EmbeddedResource Include="Icon\WandTH.png" />
+    <EmbeddedResource Include="Icon\Water.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

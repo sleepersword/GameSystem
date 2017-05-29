@@ -1,0 +1,3 @@
+0x0 = pure file archive
+0x1 = mixed file-elements archive
+0x2 = pure elements archive

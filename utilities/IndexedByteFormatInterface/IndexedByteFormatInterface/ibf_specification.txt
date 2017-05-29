@@ -1,0 +1,37 @@
+INDEXED_BYTE_FORMAT - SPECIFICATION SHEET
+VERSION = 3
+
+struct Identificator								//12
+{
+	UInt16 ID;										//2
+	UInt16 ExtensionID;								//2
+	UInt32 FirstByte;								//4
+	UInt32 Length;									//4
+}
+
+class Header										//31 + sizeof(Indices)
+{
+	byte Version;									//1
+    byte[16] MD5_Checksum;							//16
+	UInt16 BeginOfData								//2
+    UInt32 LengthOfData;							//4; Only length of Data
+    UInt16 ElementCount;							//2
+    byte[6] Flags;									//6
+	Identificator[Header.ElementCount] Indices		//12 * Header.ElementCount
+}
+
+document  
+{
+	Header;									
+	byte[] Data;
+}
+
+Flags = 
+(
+	0 = document_type,
+	1 = ,
+	2 = ,
+	3 = ,
+	4 = ,
+	5 = ,
+)

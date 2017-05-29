@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.3
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndexedByteFormatInterface", "IndexedByteFormatInterface.csproj", "{182A25E7-064D-43FD-ACC4-925019637562}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBFTest", "..\IBFTest\IBFTest.csproj", "{FEB16796-2347-46F3-940D-998D9A5694F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{182A25E7-064D-43FD-ACC4-925019637562}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182A25E7-064D-43FD-ACC4-925019637562}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182A25E7-064D-43FD-ACC4-925019637562}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182A25E7-064D-43FD-ACC4-925019637562}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB16796-2347-46F3-940D-998D9A5694F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB16796-2347-46F3-940D-998D9A5694F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB16796-2347-46F3-940D-998D9A5694F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB16796-2347-46F3-940D-998D9A5694F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

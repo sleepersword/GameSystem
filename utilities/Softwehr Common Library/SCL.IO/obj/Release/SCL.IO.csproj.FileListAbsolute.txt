@@ -1,0 +1,8 @@
+E:\Dropbox\Var\Softwehr Common Library\SCL.IO\bin\Release\SCL.IO.dll
+E:\Dropbox\Var\Softwehr Common Library\SCL.IO\bin\Release\SCL.IO.pdb
+E:\Dropbox\Var\Softwehr Common Library\SCL.IO\obj\Release\SCL.IO.dll
+E:\Dropbox\Var\Softwehr Common Library\SCL.IO\obj\Release\SCL.IO.pdb
+H:\Dropbox\Var\Softwehr Common Library\SCL.IO\bin\Release\SCL.IO.dll
+H:\Dropbox\Var\Softwehr Common Library\SCL.IO\bin\Release\SCL.IO.pdb
+H:\Dropbox\Var\Softwehr Common Library\SCL.IO\obj\Release\SCL.IO.dll
+H:\Dropbox\Var\Softwehr Common Library\SCL.IO\obj\Release\SCL.IO.pdb

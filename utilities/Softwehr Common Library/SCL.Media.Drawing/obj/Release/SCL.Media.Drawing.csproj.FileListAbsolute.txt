@@ -1,0 +1,9 @@
+E:\Dropbox\Var\Softwehr Common Library\SCL.Media.Drawing\bin\Release\SCL.Media.Drawing.dll
+E:\Dropbox\Var\Softwehr Common Library\SCL.Media.Drawing\bin\Release\SCL.Media.Drawing.pdb
+E:\Dropbox\Var\Softwehr Common Library\SCL.Media.Drawing\obj\Release\SCL.Media.Drawing.dll
+E:\Dropbox\Var\Softwehr Common Library\SCL.Media.Drawing\obj\Release\SCL.Media.Drawing.pdb
+E:\Dropbox\Var\Softwehr Common Library\SCL.Media.Drawing\obj\Release\SCL.Media.Drawing.csprojResolveAssemblyReference.cache
+H:\Dropbox\Var\Softwehr Common Library\SCL.Media.Drawing\bin\Release\SCL.Media.Drawing.dll
+H:\Dropbox\Var\Softwehr Common Library\SCL.Media.Drawing\bin\Release\SCL.Media.Drawing.pdb
+H:\Dropbox\Var\Softwehr Common Library\SCL.Media.Drawing\obj\Release\SCL.Media.Drawing.dll
+H:\Dropbox\Var\Softwehr Common Library\SCL.Media.Drawing\obj\Release\SCL.Media.Drawing.pdb
